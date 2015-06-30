@@ -1,0 +1,402 @@
+html, body {
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	color:#69696c;
+	margin:0px;
+}
+
+ul {
+	list-style-type: circle;
+	list-style-position: outside;
+}
+
+ol {
+	list-style-type: upper-alpha;
+	list-style-position: outside;
+}
+
+#container {
+	width: 80%;
+	margin: 0px auto;
+	position:relative;
+	border-width:10px 40px 0px 40px;
+	border-style:solid;
+	border-color:#ededed;
+}
+
+#header_container {
+	width: 100%;
+	background:#FFFFFF;
+	background-image: url('../images/header_bg.png');
+	background-repeat:repeat-x;
+}
+#header_logo{
+	float:left;
+}
+#header_login_data{
+	width:50%;
+	text-align:right;
+	float:right;
+	padding: 5px 10px 5px 5px;
+}
+.content_container {
+	width: 98%;
+	background:transparent;
+	margin:5px auto;
+	padding:0px;
+	min-height: 500px;
+	height: auto;
+}
+
+.footer_container {
+	width: 100%;
+	background:#ededed;
+	text-align:center;
+	margin:10px auto;
+}
+
+.footer_content_container {
+	width: 98%;
+	background:transparent;
+	margin:5px auto;
+	padding:0px;
+	min-height: 25px;
+	height: auto;
+}
+
+.clear{
+	clear:both;
+}
+
+.small {
+	font-size: 9px;
+}
+
+.big {
+	font-size: 18px;
+}
+
+.bodystyle {
+	font-size: 12px;
+}
+
+.box1 {
+	padding: 3px;
+	border-width: thin;
+	border-style: solid;
+	border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+
+.box2 {
+	border-width: 3px;
+	border-style: solid;
+	padding: 5px;
+}
+.rounded-box{
+	border:2px solid #d1d1d1;
+	border-radius:3px;
+	padding:10px;
+}
+.header-style{
+	font-weight:bold;
+	font-size:18px;
+}
+.style_text_field{
+	border: 1px solid #adaeae;
+	margin:3px;
+	color:#adabab;
+	width:250px;
+	height:30px;
+	line-height:30px;
+	font-size:15px;
+}
+
+.display_text{
+	margin:3px;
+	color:#adabab;
+	width:600px;
+	/* height:30px; */
+	font-size:15px;
+	float:left;
+	clear:right;
+}
+
+.style_text_area{
+	border: 1px solid #adaeae;
+	color:#adabab;
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 12px;
+	/*background:#ffffff url('images/field_bg.gif') no-repeat;*/
+	padding: 3px;
+	margin:3px;
+	font-size:15px;
+	width:625px;
+	height:60px;
+	/* margin-left:153px; */
+}
+
+.style_select{
+	border: 1px solid #adaeae;
+	margin:3px;
+	padding: 0px 0px 0px 0px;
+	color:#adabab;
+	width:250px;
+	height:30px;
+	line-height:30px;
+	font-size:15px;
+}
+
+.style_multi_select{
+	border: 1px solid #adaeae;
+	margin:3px;
+	padding: 0px 0px 0px 0px;
+	color:#adabab;
+	line-height:30px;
+	font-size:15px;
+}
+
+.profilediv{
+	display:none;
+}
+.policydiv{
+	display:none;
+}
+
+.mand{
+	color:red;
+	font-weight:bold;
+	font-size:14px;
+}
+
+label_orig{
+	float:left;
+	width:150px;
+	margin:3px;
+	height:32px;
+	line-height:32px;
+	text-align:right;
+} 
+label{
+	float:left;
+	width:150px;
+	margin:3px;
+	text-align:right;
+} 
+
+
+fieldset{
+	border:none;
+}
+legend{
+	font-weight:bold;
+	font-size:18px;
+	margin:10px;
+}
+
+
+
+/****************** Buttons ************************/
+
+.btn_blue{
+	color:#ffffff;
+	background:#2c68b8;
+	border:1px solid #405d83;
+	border-radius:3px;
+	font-weight:bold;
+	padding:5px 10px;
+	cursor:pointer;
+}
+
+.btn_grey{
+	color:#ffffff;
+	background:#727272;
+	border:1px solid #acacac;
+	border-radius:3px;
+	font-weight:bold;
+	padding:5px 10px;
+	cursor:pointer;
+}
+
+.btn_red{
+	color:#ffffff;
+	background:#f00000;
+	border:1px solid #acacac;
+	border-radius:3px;
+	font-weight:bold;
+	padding:5px 10px;
+	cursor:pointer;
+}
+
+.btn_clear{
+	color:#69696c;
+	background:transparent;
+	border:none;
+	font-weight:bold;
+	padding:5px 10px;
+	cursor:pointer;
+}
+
+a.btn_blue:link{
+	text-decoration:none;
+}
+
+a.btn_clear:link{
+	text-decoration:none;
+}
+a.btn_clear:hover{
+	text-decoration:underline;
+}
+
+/****************** End Buttons ********************/
+
+/****************** Message Divs *******************/
+
+#msgBox{
+	display:none;
+}
+
+.msgBoxOverlay { 
+	/* Shades out background when selector is active */
+	position:fixed; 
+	width:100%; 
+	height:100%;
+	top:0px;
+	left:0px;
+	 background-color:black; 
+	 opacity:.5; /* Sets opacity so it's partly transparent */ 
+	 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE transparency */ 
+	 filter:alpha(opacity=50); /* More IE transparency */ 
+	 z-index:40001;
+}
+
+.msgBoxModal{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	z-index:1000;
+	height:100%;
+	background:transparent;
+	overflow-y:scroll;
+}
+
+.msgBoxHelp{
+	width:405px;
+	position:absolute;
+	z-index:3;
+}
+#closeModal { 
+	position:absolute; 
+	top:-12px; /* Half the icon's height */ 
+	right:-12px; /* half the icon's width */ 
+	z-index:50; 
+	cursor:pointer;
+}
+
+#msgContentHolder{
+	position:fixed; 
+	top:30%; 
+	width:100%;
+	z-index:40002; /* ensures box appears above overlay */
+}
+
+#msgContent{
+	width:405px; /* Whatever width you want the box to be */ 
+	max-height:60%;
+	position:relative; 
+	margin:0 auto;
+	background:#ffffff;
+	border:1px solid #ffffff;
+	border-radius:5px;
+	padding:5px;
+	color:#69696c;
+}
+
+#msgText{
+	height:90%; 
+	margin-top:5%;
+	overflow-y:auto;
+}
+/****************** End Message Divs ***************/
+
+/****************** Tables *************************/
+
+.tbl_bordered{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+.tbl_bordered td{
+	border:1px solid black;
+	border-collapse:collapse;
+	padding:3px 3px 3px 6px;
+}
+.tbl_bordered th{
+	border:1px solid black;
+	border-collapse:collapse;
+	font-weight:bold;
+	text-align:left;
+	padding:3px 3px 3px 6px;
+}
+
+
+
+/****************** End Tables *********************/
+
+/****************** Menus **************************/
+#top_menu{
+	float:right;
+	margin:10px 0px;
+	position:relative;
+	padding: 0px 10px;
+}
+
+.top_menu_link{
+	color:#000000;
+	text-decoration:none;
+	font-size: 14px;
+}
+
+.top_menu_link:hover{
+	text-decoration:underline;
+}
+
+#context_menu{
+	float:right;
+	margin:10px 0px 20px 0px;
+	position:relative;
+}
+
+.context_menu_link{
+	color:#000000;
+	text-decoration:none;
+	font-size: 12px;
+	margin-left:20px;
+}
+
+.context_menu_link:hover{
+	text-decoration:underline;
+}
+
+#page_menu{
+	float:left;
+	margin:10px 0px 20px 0px;
+	position:relative;
+}
+
+.page_menu_link{
+	color:#000000;
+	text-decoration:none;
+	font-size: 12px;
+	margin-right:20px;
+	cursor:pointer;
+}
+
+.page_menu_link:hover{
+	text-decoration:underline;
+}
+
+
+.currentpagelink{
+	color:red;
+}
+/****************** End Menus *********************/

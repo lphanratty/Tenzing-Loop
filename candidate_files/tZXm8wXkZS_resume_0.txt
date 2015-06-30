@@ -1,0 +1,41 @@
+Log Name:      System
+Source:        AtcL001
+Date:          16/09/2013 5:24:58 PM
+Event ID:      194
+Task Category: None
+Level:         Error
+Keywords:      Classic
+User:          N/A
+Computer:      ColinFisher-PC
+Description:
+The description for Event ID 194 from source AtcL001 cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
+
+If the event originated on another computer, the display information had to be saved with the event.
+
+The following information was included with the event: 
+
+\Device\NDMP16
+Atheros L1 Gigabit Ethernet 10/100/1000Base-T Controller
+
+The specified resource type cannot be found in the image file
+
+Event Xml:
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="AtcL001" />
+    <EventID Qualifiers="49152">194</EventID>
+    <Level>2</Level>
+    <Task>0</Task>
+    <Keywords>0x80000000000000</Keywords>
+    <TimeCreated SystemTime="2013-09-16T21:24:58.781837900Z" />
+    <EventRecordID>12324</EventRecordID>
+    <Channel>System</Channel>
+    <Computer>ColinFisher-PC</Computer>
+    <Security />
+  </System>
+  <EventData>
+    <Data>\Device\NDMP16</Data>
+    <Data>Atheros L1 Gigabit Ethernet 10/100/1000Base-T Controller</Data>
+    <Binary>000004000200340000000000C20000C00000000000000000000000000000000000000000000000000004304D</Binary>
+  </EventData>
+</Event>
